@@ -1,0 +1,413 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.banner_sections {
+  margin-top: 7rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  color: #3a3a3a;
+  font-weight: 700;
+}
+
+.p {
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  background: #e02c6d;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem 3rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #cf0c54;
+}
+header {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul li {
+  margin-right: 1rem;
+}
+
+nav > ul li a {
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+/* style for banner section */
+
+.banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner_text_box {
+  padding-right: 5rem;
+}
+
+.banner_text_box h1 {
+  color: #3a3a3a;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+}
+
+.banner_text_box p {
+  padding-right: 6rem;
+  margin-bottom: 1rem;
+}
+
+.banner_img_box {
+  background-image: url("influencer-gear-main/images/Circle\ design.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner_img_box img {
+  width: 100%;
+}
+
+/* <=======company section=============> */
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.isponsership_section {
+  padding: 7rem;
+}
+
+.company_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_img img {
+  margin-right: 2rem;
+}
+
+/* <==========popular section==============> */
+.popular_section {
+  margin-top: 7rem;
+}
+
+.popular_section > h3 {
+  text-align: center;
+}
+
+.cards_container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.card {
+  border-radius: 0.3125rem;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card i {
+  color: #fb8200;
+}
+
+.for_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_see_more {
+  color: #e02c6d;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 1rem;
+  background-color: transparent;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* <==========feature section=============> */
+
+.feature_section {
+  margin-top: 7rem;
+}
+
+.feature_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature_img_box img {
+  width: 25.25rem;
+  height: 16.875rem;
+}
+
+.feature_text_box {
+  margin-left: 5rem;
+}
+
+.feature_text_box h3 {
+  font-size: 2.375rem;
+  margin-bottom: 2rem;
+}
+
+.feature_text_box p {
+  margin-right: 7rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.last_btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #e02c6d;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.last_btn:hover {
+  background-color: #cf0c54;
+}
+
+/* <===========footer==============> */
+
+footer {
+background: #0A0826;
+color: #ffffffd2;
+text-align: center;
+padding: 3rem;
+margin-top: 7rem;
+line-height: 2rem;
+}
+
+.icons i {
+  background-color: rgb(31, 26, 26);
+  padding: .500rem;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 0.500rem;
+  margin-top: 0.500rem;
+
+}
+/* <========responsive styles===========> */
+
+/* <-----responsive for mobile--------> */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    padding: 2rem 0;
+    align-items: center;
+  }
+
+  .banner_sections {
+    margin: 0;
+  }
+
+  .banner_container {
+    flex-direction: column-reverse;
+  }
+
+  .banner_text_box {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .banner_text_box h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .banner_text_box p {
+    padding-right: 0;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .banner_text_box button {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner_img_box img {
+    width: 90%;
+  }
+
+  .banner_img_box {
+    width: 80%;
+    padding-top: 3rem;
+    background-size: cover;
+  }
+  /* company */
+
+  .isponsership_section {
+    padding: 4rem;
+  }
+  .company_img {
+    flex-wrap: wrap;
+  }
+
+  .company_img img {
+    margin-top: 2rem;
+  }
+
+  /* popular */
+  .popular_section {
+    margin-top: 4rem;
+  }
+
+  .cards_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* feature section */
+
+  .feature_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .feature_text_box {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .feature_img_box img {
+    width: 100%;
+  }
+
+  .feature_text_box h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 0.250rem;
+  }
+
+  .feature_text_box p {
+    margin-right: 0;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+
+  .last_btn {
+    font-weight: 600;
+    padding: 0.500rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ------responsive for medium device---------- */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .banner_sections {
+    margin-top: 3rem;
+  }
+
+  .banner_text_box {
+    padding-right: 0;
+  }
+
+  .banner_text_box h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .banner_text_box p {
+    font-weight: 500;
+  }
+
+  .banner_text_box button {
+    padding: 1rem 2rem;
+    font-weight: 600;
+  }
+
+  .banner_img_box img {
+    width: 100%;
+  }
+
+  .banner_img_box {
+    background-size: cover;
+    width: 100%;
+  }
+
+   /* feature section */
+
+  .feature_img_box img {
+    width: 22rem;
+  }
+
+  .feature_text_box h3 {
+   margin-bottom: 0.250rem;
+  }
+
+  .feature_text_box p {
+  line-height: 1.5rem;
+  }
+
+
+
+  
+}
